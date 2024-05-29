@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONARA - Music Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Introduction Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SONARA ♪</h1>
+            <p>Finding yourself listening to the same songs? Put those songs in SONARA and find your next favorite tune!</p>
+            <div class="buttons">
+                <button onclick="scrollToSection('recommendation')">TRY IT NOW</button>
+                <button onclick="scrollToSection('how-it-works')">HOW IT WORKS</button>
+            </div>
+        </div>
+        <div class="rain-container front-row">
+            <div class="rain front-row"></div>
+            <div class="rain back-row"></div>
+        </div>
+    </section>
+
+    <!-- Recommendation System Section -->
+    <section id="recommendation" class="recommendation-container">
+        <div class="form-container">
+            <h2>Try it out!</h2>
+            <div class="input-group">
+                <input type="text" id="song1" placeholder="Favorite Song 1 (e.g., 'God's Plan by Drake')">
+                <input type="text" id="song2" placeholder="Favorite Song 2 (e.g., 'Shape of You by Ed Sheeran')">
+                <input type="text" id="song3" placeholder="Favorite Song 3 (e.g., 'Blinding Lights by The Weeknd')">
+            </div>
+            <button id="recommendBtn">Get Recommendation</button>
+        </div>
+        <div id="recommendation-text" class="recommendation-details">
+            <!-- Recommended song details will appear here -->
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-container">
+        <h2>How It Works</h2>
+        <p>SONARA uses the Spotify Web API to generate personalized music recommendations for you based on your favorite songs. Here's a brief overview of how this system was built:</p>
+        <ol>
+            <li><strong>Frontend:</strong> Created using HTML, CSS, and JavaScript. The UI allows users to enter their favorite songs and obtain recommendations.</li>
+            <li><strong>Backend:</strong> Built with Node.js and Express.js. It processes the user’s input and fetches recommendations from the Spotify API.</li>
+            <li><strong>Spotify API:</strong> Utilizes the Client Credentials flow to obtain access tokens and retrieve song recommendations based on the user’s favorite tracks.</li>
+        </ol>
+        <p>Total dependencies required:</p>
+        <ul>
+            <li>express</li>
+            <li>axios</li>
+            <li>body-parser</li>
+        </ul>
+        <p>For more details, reach out to zmabu@uw.edu.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <p>If you run into any problems or issues, please feel free to contact me!</p>
+        <p>Email: <a href="mailto:zmabu@uw.edu">zmabu@uw.edu</a></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
