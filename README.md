@@ -1,10 +1,11 @@
 # SONARA ♪ - Music Recommender System
 
-![image](https://github.com/zmabu-css/SonaraFinal/assets/121013977/f732d642-22d0-4112-b1e8-2c7bc845b095)
+
+https://github.com/zmabu-css/SonaraFinal/assets/121013977/8a079ecb-1d1e-456e-877f-3517d17ce18a
 
 ## Video Demo
+![image](https://github.com/zmabu-css/SonaraFinal/assets/121013977/f732d642-22d0-4112-b1e8-2c7bc845b095)
 
-https://www.youtube.com/watch?v=NejJj5lUUDI&feature=youtu.be
 
 ## Overview
 **SONARA ♪** is a music recommendation system designed to help you discover new music based on your favorite songs. Simply input your favorite tracks, and SONARA will suggest a new song for you to explore. The user interface is inspired by Spotify's sleek design, with a dynamic rain effect on the landing page to enhance the visual experience.
